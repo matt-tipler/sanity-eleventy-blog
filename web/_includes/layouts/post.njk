@@ -4,8 +4,6 @@ templateClass: tmpl-post
 ---
 <article>
   <h1>{{ post.title }}</h1>
-  <h2>and this..</h2>
-  {{ post.image }}
   <p>Written by {% for author in post.authors %}{{author.name}}{% endfor %}  </p>
   {{ post.body | markdownify | safe }}
   <p><a href="{{ '/' | url }}">← Home</a></p>

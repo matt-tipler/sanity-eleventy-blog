@@ -9,6 +9,7 @@ import author from './documents/author'
 import category from './documents/category'
 import post from './documents/post'
 import siteSettings from './documents/siteSettings'
+import siteSettings from './documents/random'
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
@@ -35,34 +36,7 @@ export default createSchema({
     bodyPortableText,
     bioPortableText,
     excerptPortableText,
-    {
-      name: 'random',
-      type: 'document',
-      title: 'Random Text',
-      fields: [
-        {
-          name: 'title',
-          type: 'string',
-          title: 'Title',
-          description: 'Titles should be catchy, descriptive, and not too long'
-        },
-        {
-          name: 'image',
-          type: 'mainImage',
-          title: 'Image'
-        },
-        {
-          name: 'authors',
-          title: 'Authors',
-          type: 'array',
-          of: [
-            {
-              type: 'authorReference'
-            }
-          ]
-        },
-      ],
-    }
+    random,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
   ])

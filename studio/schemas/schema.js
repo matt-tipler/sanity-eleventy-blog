@@ -46,6 +46,21 @@ export default createSchema({
           title: 'Title',
           description: 'Titles should be catchy, descriptive, and not too long'
         },
+        {
+          name: 'image',
+          type: 'mainImage',
+          title: 'Image'
+        },
+        {
+          name: 'authors',
+          title: 'Authors',
+          type: 'array',
+          of: [
+            {
+              type: 'authorReference'
+            }
+          ]
+        },
       ],
     }
     // When added to this list, object types can be used as

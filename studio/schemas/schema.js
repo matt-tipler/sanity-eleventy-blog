@@ -9,7 +9,8 @@ import author from './documents/author'
 import category from './documents/category'
 import post from './documents/post'
 import siteSettings from './documents/siteSettings'
-import siteSettings from './documents/random'
+import random from './documents/random'
+import gallery from './documents/gallery'
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
@@ -37,6 +38,7 @@ export default createSchema({
     bioPortableText,
     excerptPortableText,
     random,
+    gallery,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
   ])

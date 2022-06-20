@@ -23,6 +23,10 @@ module.exports = function(eleventyConfig) {
     return new CleanCSS({}).minify(code).styles;
   });
 
+  eleventyConfig.addPassthroughCopy({
+    './_includes/style.css': './style.css',
+  });
+
   eleventyConfig.addFilter("debug", function(value) {
     return util.inspect(value, {compact: false})
    });

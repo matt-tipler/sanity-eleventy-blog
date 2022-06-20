@@ -34,8 +34,20 @@ export default createSchema({
     authorReference,
     bodyPortableText,
     bioPortableText,
-    excerptPortableText
-
+    excerptPortableText,
+    {
+      name: 'random',
+      type: 'document',
+      title: 'Random Text',
+      fields: [
+        {
+          name: 'title',
+          type: 'string',
+          title: 'Title',
+          description: 'Titles should be catchy, descriptive, and not too long'
+        },
+      ],
+    }
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
   ])

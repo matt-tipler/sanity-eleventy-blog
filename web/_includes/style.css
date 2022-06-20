@@ -1,4 +1,8 @@
-/* Tufte-ish CSS styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tufte-ish CSS styles
 html {
     font-size: 15px;
 }
@@ -91,7 +95,7 @@ section > table {
 }
 
 /* 50 + 5 == 55, to be the same width as paragraph */
-section > ol,
+/* section > ol,
 section > ul {
     width: 50%;
     -webkit-padding-start: 5%;
@@ -130,7 +134,7 @@ figure.fullwidth figcaption {
 }
 
 /* Links: replicate underline that clears descenders */
-a:link,
+/* a:link,
 a:visited {
     color: inherit;
 }
@@ -139,4 +143,4 @@ a:hover {
 }
 img {
     max-width: 100%;
-}
+} */

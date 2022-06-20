@@ -9,9 +9,10 @@
     {% set css %}
       {% include "style.css" %}
     {% endset %}
-    <style>
+    {# <style>
       {{ css | cssmin | safe }}
-    </style>
+    </style> #}
+    <link rel="stylesheet" href="/output.css">
   </head>
   <body>
     <header>

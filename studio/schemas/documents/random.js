@@ -15,6 +15,11 @@ export default {
         title: 'Image'
       },
       {
+        name: 'gallery',
+        type: 'gallery',
+        title: 'Gallery'
+      },
+      {
         name: 'authors',
         title: 'Authors',
         type: 'array',
